@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">        
+    <link rel="icon" type="image/x-icon" href="images/icon.png">        
     <title>Schody Poznań - Schody Nowy Tomyśl Raczkowiak Piotr</title>
     <meta name="description" content="Produkcja i projektowanie schodów drewnianych, stalowych i innych na zamówienie. Schody wewnętrzne, zewnętrzne, na wymiar.">
     <meta name="keywords" content="produkcja schodów, schody na zamówienie, schody drewniane, schody stalowe, projektowanie schodów, schody wewnętrzne, schody zewnętrzne, nowoczesne schody, schody kręcone, schody proste, schody na wymiar, schody do domu, montaż schodów, schody metalowe, schody drewniano-stalowe, schody Nowy Tomyśl, schody Poznań, schody Polska, schody dywanowe, schody półkowe, schody galeria">
@@ -115,7 +115,7 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/images/logo.png" alt="Schody Raczkowiak Logo" class="img-fluid">
+                <img src="images/logo.png" alt="Schody Raczkowiak Logo" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -123,7 +123,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Strona Główna</a>
+                        <a class="nav-link active" aria-current="page" href="">Strona Główna</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="o-nas.html">O Nas</a>
@@ -311,7 +311,7 @@ function createProductCard(productId) {
     card.setAttribute('onclick', `showProductDetail(${productId})`);
     card.setAttribute('data-product-id', productId);
     
-    const imgPath = `/images/stairs/${productId}/thumbnail.jpg`;
+    const imgPath = `images/stairs/${productId}/thumbnail.jpg`;
     
     card.innerHTML = `
         <img data-src="${imgPath}" class="card-img-top" alt="Product ${productId}" 
@@ -351,7 +351,7 @@ function checkFolderBatch(startIndex, endIndex, callback) {
 // Check if a single folder exists
 function checkSingleFolder(folderId, callback) {
     const img = new Image();
-    img.src = `/images/stairs/${folderId}/thumbnail.jpg`;
+    img.src = `images/stairs/${folderId}/thumbnail.jpg`;
     
     // Set a timeout for the check
     const timeoutId = setTimeout(() => {
@@ -461,7 +461,7 @@ function loadDetailImageBatch(productId, startNumber, endNumber, gallery, callba
 // Check if a detail image exists
 function checkDetailImage(productId, imageNumber, callback) {
     const img = new Image();
-    img.src = `/images/stairs/${productId}/${imageNumber}.jpg`;
+    img.src = `images/stairs/${productId}/${imageNumber}.jpg`;
     
     // Set a timeout for the check
     const timeoutId = setTimeout(() => {
@@ -547,7 +547,7 @@ function createImageElement(productId, imageNumber) {
     const detailCard = document.createElement('div');
     detailCard.className = 'card h-100';
     
-    const imgPath = `/images/stairs/${productId}/${imageNumber}.jpg`;
+    const imgPath = `images/stairs/${productId}/${imageNumber}.jpg`;
     
     detailCard.innerHTML = `
         <div class="img-container">
